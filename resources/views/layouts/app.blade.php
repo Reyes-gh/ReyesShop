@@ -46,10 +46,7 @@
                                 Cart ({{ $cartService->countProducts() }})
                             </a>
                         </li>
-                    </ul>
-
-                    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
-        
+                    </ul>        
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
