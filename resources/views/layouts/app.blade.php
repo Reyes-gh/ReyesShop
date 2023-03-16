@@ -21,7 +21,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark bg-black shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm sticky-top">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -47,6 +47,9 @@
                             </a>
                         </li>
                     </ul>
+
+                    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+        
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
