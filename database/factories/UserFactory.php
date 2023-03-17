@@ -9,14 +9,14 @@ use Illuminate\Support\Str;
 class UserFactory extends Factory
 {
     /**
-     * The name of the factory's corresponding model.
+     * Nombre del modelo de la Factory
      *
      * @var string
      */
     protected $model = User::class;
 
     /**
-     * Define the model's default state.
+     * Estado predeterminado del modelo
      *
      * @return array
      */
@@ -26,7 +26,7 @@ class UserFactory extends Factory
             'name' => $this->faker->name,
             'email' => $this->faker->unique()->safeEmail,
             'email_verified_at' => now(),
-            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
             'remember_token' => Str::random(10),
             'admin_since' => $this->faker->randomElement([now(), null]),
         ];

@@ -9,14 +9,12 @@ use Illuminate\Support\Str;
 class ImageFactory extends Factory
 {
     /**
-     * The name of the factory's corresponding model.
      *
      * @var string
      */
     protected $model = Image::class;
 
     /**
-     * Define the model's default state.
      *
      * @return array
      */
@@ -25,7 +23,7 @@ class ImageFactory extends Factory
         $fileName = $this->faker->numberBetween(1, 10) . '.jpg';
 
         return [
-            'path' => "images/products/{$fileName}"
+            'path' => "img/products/{$fileName}"
         ];
     }
 
@@ -34,7 +32,7 @@ class ImageFactory extends Factory
         $fileName = $this->faker->numberBetween(1, 5) . '.jpg';
 
         return $this->state([
-            'path' => "images/users/{$fileName}"
+            'path' => "img/users/{$fileName}"
         ]);
     }
 }
