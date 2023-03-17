@@ -5070,6 +5070,8 @@ input[type=button].btn-block {
 .card-img-top,
 .card-img-bottom {
   flex-shrink: 0;
+  max-height: 290px;
+  width: auto;
 }
 
 .card-img,
