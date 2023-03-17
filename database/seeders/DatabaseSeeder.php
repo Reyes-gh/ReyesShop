@@ -37,16 +37,13 @@ class DatabaseSeeder extends Seeder
 
                 $payment = Payment::factory()->make();
 
-                // $payment->order_id = $order->id;
-                // $payment->save();
-
                 $order->payment()->save($payment);
             });
 
 
         $carts = Cart::factory(10)->create();
 
-        $products = Product::factory(10)
+        $products = Product::factory(60)
             ->create()
             ->each(function ($product) use ($orders, $carts) {
                 $order = $orders->random();
